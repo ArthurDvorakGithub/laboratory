@@ -38,6 +38,7 @@ namespace Lab1_WpfAppNew
             string textFromFile;
 
             // создаем каталог для файла
+
             string path = @"C:\SortFolder";
             DirectoryInfo dirInfo = new DirectoryInfo(path);
             if (!dirInfo.Exists)
@@ -88,16 +89,20 @@ namespace Lab1_WpfAppNew
             }
         }
 
+        /// <summary>
+        /// обработчик событий для кнопки
+        /// </summary>
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            
             
             string str = (string)((Button)e.OriginalSource).Content;
 
             if (str == "AC")
             {
                 textLabel.Text = "";
+                str = "";
             }
-               
 
             if (textLabel1.Text != null)
             {
@@ -105,65 +110,36 @@ namespace Lab1_WpfAppNew
 
             }
 
+
             if (str == "Запись в файл")
             {
-                string textFromFile;
-                
-                // чтение из файла
-                using (FileStream fstream = File.OpenRead(@"C:\SortFolder\inputLaba1.txt"))
+                if (textLabel1.Text == "")
                 {
-                    // преобразуем строку в байты
-                    byte[] array = new byte[fstream.Length];
-                    // считываем данные
-                    fstream.Read(array, 0, array.Length);
-                    // декодируем байты в строку
-                    string text = System.Text.Encoding.Default.GetString(array);
+                    string textFromFile1 = textLabel.Text;
 
-                    textFromFile = text;
-
-                }
-
-                //запись в файл 
-                using (FileStream fstream = new FileStream(@"C:\SortFolder\outputLaba1.txt", FileMode.Create))
-                {
-                    //разбиваем на массив строк 
-                    string[] nums = textFromFile.Split(separator: new string[] { "\r", "\n" }, StringSplitOptions.None);
-
-                    for (int i = 0; i < nums.Length; i++)
+                    //запись в файл 
+                    using (FileStream fstream = new FileStream(@"C:\SortFolder\outputLaba1.txt", FileMode.Append))
                     {
-                        // разбиваем строку на массив из 2х элементов
-                        string[] firstAndSecondNumber = nums[i].Split(new char[] { ',' }, StringSplitOptions.None);
 
-                        if (firstAndSecondNumber[0] != "")
+                        string[] numsOfInputText = textLabel.Text.Split(new char[] { ',' }, StringSplitOptions.None);
+
+                        if (numsOfInputText[0] != "")
                         {
 
-                            textFromFile = "X:" + firstAndSecondNumber[0].Replace(".", ",") + " Y:" + firstAndSecondNumber[1].Replace(".", ",") + "\n";
+                            textFromFile1 = "X:" + numsOfInputText[0].Replace(".", ",") + " Y:" + numsOfInputText[1].Replace(".", ",") + "\n";
 
                             // преобразуем строку в байты
-                            byte[] input = Encoding.Default.GetBytes(textFromFile);
+                            byte[] input = Encoding.Default.GetBytes(textFromFile1);
                             // запись массива байтов в файл
                             fstream.Write(input, 0, input.Length);
 
                         }
-                    }
 
-
-                    string[] numsOfInputText = textLabel.Text.Split(new char[] { ',' }, StringSplitOptions.None);
-
-                    if (numsOfInputText[0] != "")
-                    {
-
-                        textFromFile = "X:" + numsOfInputText[0].Replace(".", ",") + " Y:" + numsOfInputText[1].Replace(".", ",") + "\n";
-
-                        // преобразуем строку в байты
-                        byte[] input = Encoding.Default.GetBytes(textFromFile);
-                        // запись массива байтов в файл
-                        fstream.Write(input, 0, input.Length);
+                        textLabel.Text = "";
+                        textLabel1.Text = "Текст записан в файл!"; 
 
                     }
 
-                    textLabel.Text = "";
-                    textLabel1.Text = "Текст записан в файл!";
 
                 }
 
@@ -171,10 +147,9 @@ namespace Lab1_WpfAppNew
 
             else
             {
+
                 textLabel.Text += str;
             }
-                
-
 
         }
 
