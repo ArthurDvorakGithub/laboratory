@@ -1,0 +1,16 @@
+C:\Users\Arthur\source\repos\Epam\Lab2.1-ConsoleApp\Lab2.1-ConsoleApp\bin\Debug\net5.0\Lab2.1-ConsoleApp.exe
+C:\Users\Arthur\source\repos\Epam\Lab2.1-ConsoleApp\Lab2.1-ConsoleApp\bin\Debug\net5.0\Lab2.1-ConsoleApp.deps.json
+C:\Users\Arthur\source\repos\Epam\Lab2.1-ConsoleApp\Lab2.1-ConsoleApp\bin\Debug\net5.0\Lab2.1-ConsoleApp.runtimeconfig.json
+C:\Users\Arthur\source\repos\Epam\Lab2.1-ConsoleApp\Lab2.1-ConsoleApp\bin\Debug\net5.0\Lab2.1-ConsoleApp.runtimeconfig.dev.json
+C:\Users\Arthur\source\repos\Epam\Lab2.1-ConsoleApp\Lab2.1-ConsoleApp\bin\Debug\net5.0\Lab2.1-ConsoleApp.dll
+C:\Users\Arthur\source\repos\Epam\Lab2.1-ConsoleApp\Lab2.1-ConsoleApp\bin\Debug\net5.0\ref\Lab2.1-ConsoleApp.dll
+C:\Users\Arthur\source\repos\Epam\Lab2.1-ConsoleApp\Lab2.1-ConsoleApp\bin\Debug\net5.0\Lab2.1-ConsoleApp.pdb
+C:\Users\Arthur\source\repos\Epam\Lab2.1-ConsoleApp\Lab2.1-ConsoleApp\obj\Debug\net5.0\Lab2.1-ConsoleApp.csproj.AssemblyReference.cache
+C:\Users\Arthur\source\repos\Epam\Lab2.1-ConsoleApp\Lab2.1-ConsoleApp\obj\Debug\net5.0\Lab2.1-ConsoleApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Arthur\source\repos\Epam\Lab2.1-ConsoleApp\Lab2.1-ConsoleApp\obj\Debug\net5.0\Lab2.1-ConsoleApp.AssemblyInfoInputs.cache
+C:\Users\Arthur\source\repos\Epam\Lab2.1-ConsoleApp\Lab2.1-ConsoleApp\obj\Debug\net5.0\Lab2.1-ConsoleApp.AssemblyInfo.cs
+C:\Users\Arthur\source\repos\Epam\Lab2.1-ConsoleApp\Lab2.1-ConsoleApp\obj\Debug\net5.0\Lab2.1-ConsoleApp.csproj.CoreCompileInputs.cache
+C:\Users\Arthur\source\repos\Epam\Lab2.1-ConsoleApp\Lab2.1-ConsoleApp\obj\Debug\net5.0\Lab2.1-ConsoleApp.dll
+C:\Users\Arthur\source\repos\Epam\Lab2.1-ConsoleApp\Lab2.1-ConsoleApp\obj\Debug\net5.0\ref\Lab2.1-ConsoleApp.dll
+C:\Users\Arthur\source\repos\Epam\Lab2.1-ConsoleApp\Lab2.1-ConsoleApp\obj\Debug\net5.0\Lab2.1-ConsoleApp.pdb
+C:\Users\Arthur\source\repos\Epam\Lab2.1-ConsoleApp\Lab2.1-ConsoleApp\obj\Debug\net5.0\Lab2.1-ConsoleApp.genruntimeconfig.cache
